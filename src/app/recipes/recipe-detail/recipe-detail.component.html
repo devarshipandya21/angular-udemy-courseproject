@@ -21,11 +21,26 @@
         <span class="caret"></span>
       </button>
       <ul class="dropdown-menu pl-2">
-        <li><a class="text-decoration-none" 
-          (click)="onAddToShoppingList()"
-          style="cursor: pointer;">To Shopping List</a></li>
-        <li><a href="#" class="text-decoration-none">Edit Recipe</a></li>
-        <li><a href="#" class="text-decoration-none">Delete Recipe</a></li>
+        <li>
+          <a
+            class="text-decoration-none"
+            (click)="onAddToShoppingList()"
+            style="cursor: pointer"
+            >To Shopping List</a
+          >
+        </li>
+        <li>
+          <a style="cursor: pointer" 
+          class="text-decoration-none"
+          (click)="onEditRecipe()"
+            >Edit Recipe</a
+          >
+        </li>
+        <li>
+          <a style="cursor: pointer" class="text-decoration-none"
+            >Delete Recipe</a
+          >
+        </li>
       </ul>
     </div>
   </div>

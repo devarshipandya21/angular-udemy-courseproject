@@ -48,11 +48,11 @@
   >
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#" (click)="onSelect('recipe')">Recipes</a>
+        <a class="nav-link" [routerLink]="['/recipes']" routerLinkActive="active" >Recipes</a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="#" (click)="onSelect('shopping')">Shopping List</a>
+        <a class="nav-link" [routerLink]="['/shopping-list']" routerLinkActive="active" >Shopping List</a>
       </li>
     </ul>
   </div>
@@ -63,8 +63,8 @@
         >Manage <span class="caret"></span
       ></a>
       <div class="dropdown-menu pl-2">
-        <li><a href="#" class=" text-decoration-none">Save Data</a></li>
-        <li><a href="#" class=" text-decoration-none">Fetch Data</a></li>
+        <li><a style="cursor: pointer;" class=" text-decoration-none">Save Data</a></li>
+        <li><a style="cursor: pointer;" class=" text-decoration-none">Fetch Data</a></li>
       </div>
     </div>
   </div>
