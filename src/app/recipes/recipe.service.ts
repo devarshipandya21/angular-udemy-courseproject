@@ -9,8 +9,6 @@ import { Injectable, Output, EventEmitter } from '@angular/core';
 export class RecipeService {
   constructor(private slService: ShoppingListService) {}
 
-  @Output() recipeSelected = new EventEmitter();
-
   private recipes: Recipe[] = [
     new Recipe(
       'Burger',
